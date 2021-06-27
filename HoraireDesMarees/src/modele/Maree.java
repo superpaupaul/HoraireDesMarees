@@ -1,5 +1,6 @@
 package modele;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 /**
@@ -9,7 +10,7 @@ import java.util.GregorianCalendar;
  */
 public class Maree {
 	private GregorianCalendar date;
-	private int typeHauteur; // BM = 0, PM = 1
+	private int typeHauteur; // null = -1, BM = 0, PM = 1
 	private int heure;
 	private int minute;
 	private float hauteur;
@@ -30,6 +31,9 @@ public class Maree {
 		this.minute = minute;
 		this.hauteur = hauteur;
 		this.coef = coef;
+		if(heure == -1) {
+			typeHauteur = -1;
+		}
 	}
 	/**
 	 * Constructeur de marée, initialise une marée basse mer
@@ -43,7 +47,21 @@ public class Maree {
 		this.heure = heure;
 		this.minute = minute;
 		this.hauteur = hauteur;
-		
+		if(heure == -1) {
+			typeHauteur = -1;
+		}
+	}
+	
+	public String toString() {
+		if(typeHauteur == 1) {
+			return "Marée haute le " + date.get(Calendar.DAY_OF_MONTH) + " " +  date.get(Calendar.MONTH) + " " + date.get(Calendar.YEAR) + " à " + heure + ":"+ minute + " avec une hauteur de "+ hauteur +" et un coefficient de " + coef;
+		}
+		else if(typeHauteur == 0){
+			return "Marée basse le " + date.get(Calendar.DAY_OF_MONTH) + " " +  date.get(Calendar.MONTH) + " " + date.get(Calendar.YEAR) + " à " + heure + ":"+ minute + " avec une hauteur de "+ hauteur;
+		}
+		else {
+			return "Marée inexistante";
+		}
 	}
 	
 	

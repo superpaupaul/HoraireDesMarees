@@ -6,6 +6,10 @@ public class CollectionMaree {
 
 	ArrayList<MareesUnJour> liste;
 	
+	public ArrayList<MareesUnJour> getListe() {
+		return liste;
+	}
+
 	public CollectionMaree() {
 		liste = new ArrayList<MareesUnJour>();
 	}

@@ -16,9 +16,19 @@ public class MareesUnJour {
 	}
 	
 	public MareesUnJour(GregorianCalendar date) {
+		this.date = date;
 		counter = 0;
+		marees = new Maree[Constantes.nbMareesParJour];
 	}
 	
+	public GregorianCalendar getDate() {
+		return date;
+	}
+
+	public Maree[] getMarees() {
+		return marees;
+	}
+
 	public void addMaree(Maree maree) {
 		if(counter >= Constantes.nbMareesParJour) {
 			try {
