@@ -1,5 +1,6 @@
 package modele;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -8,7 +9,7 @@ import java.util.GregorianCalendar;
  * @author pvallee
  *
  */
-public class Maree {
+public class Maree implements Serializable{
 	private GregorianCalendar date;
 	private int typeHauteur; // null = -1, BM = 0, PM = 1
 	private int heure;
@@ -51,7 +52,9 @@ public class Maree {
 			typeHauteur = -1;
 		}
 	}
-	
+	/**
+	 * Affiche les marées d'une manière lisible pour aider aux tests durant le développement
+	 */
 	public String toString() {
 		if(typeHauteur == 1) {
 			return "Marée haute le " + date.get(Calendar.DAY_OF_MONTH) + " " +  date.get(Calendar.MONTH) + " " + date.get(Calendar.YEAR) + " à " + heure + ":"+ minute + " avec une hauteur de "+ hauteur +" et un coefficient de " + coef;

@@ -1,8 +1,13 @@
 package modele;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-
-public class CollectionHauteur {
+/**
+ * Permet de stocker des HauteursUnJour dans une collection de type ArrayList
+ * @author superpaupaul
+ *
+ */
+public class CollectionHauteur implements Serializable{
 
 
 		ArrayList<HauteursUnJour> liste;

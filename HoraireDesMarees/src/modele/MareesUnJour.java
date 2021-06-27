@@ -1,9 +1,14 @@
 package modele;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.GregorianCalendar;
-
-public class MareesUnJour {
+/**
+ * Stocke les 4 marées (maximum) pour un jour donné
+ * @author superpaupaul
+ *
+ */
+public class MareesUnJour implements Serializable{
 
 	private GregorianCalendar date;
 	private Maree[] marees;

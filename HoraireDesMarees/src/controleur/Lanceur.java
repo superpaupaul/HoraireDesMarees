@@ -17,8 +17,9 @@ public class Lanceur {
 			for(Maree maree : mareesJour.getMarees()) {
 				System.out.println(maree);
 			}
-		}
-		*/
+		}*/
+		
+		/*// TESTER LA LECTURE DE FICHIER HEURE PAR HEURE
 		File fichier = new File("data/HeureParHeure/maregraphie/arcachon.txt");
 		CollectionHauteur collect = modele.LectureFichierTxt.lectureHauteur(fichier);
 		for(HauteursUnJour hauteursJour : collect.getListe()) {
@@ -28,6 +29,7 @@ public class Lanceur {
 				System.out.println(hauteur);
 			}
 		}
+		*/
 	}
 	
 }

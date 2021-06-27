@@ -1,9 +1,14 @@
 package modele;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
-
-public class HauteursUnJour {
+/**
+ * Stocke les hauteurs pour un jour donné
+ * @author superpaupaul
+ *
+ */
+public class HauteursUnJour implements Serializable{
 
 	private GregorianCalendar date;
 	private ArrayList<Hauteur> hauteurs;

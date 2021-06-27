@@ -9,15 +9,32 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.StringTokenizer;
-
+/**
+ * Classe permettant de lire des fichiers de marées avec la fonction lectureMaree ou des fichiers de hauteurs heure par heure 
+ * et renvoyer des collections d'objets java marée / hauteur
+ * @author superpaupaul
+ *
+ */
 public class LectureFichierTxt {
 
+	/**
+	 * Vérifie si le fichier n'a pas déjà été lu, si c'est le cas on reprend la collection enregistrée, sinon on parcoure le
+	 * fichier .txt et enregistre toutes les maréesUnJour dans une CollectionMaree, puis on écris le fichier java sur le système en
+	 * utilisant le même nom avec un .java à la fin.
+	 * @param fichier
+	 * @return
+	 */
 	public static CollectionMaree lectureMaree (File fichier ) {
+		File fichierPotentiellementInexistant = new File(fichier.getPath() + ".java");
+		if(fichierPotentiellementInexistant.exists()) {
+			return (CollectionMaree) lectureFichierEnregistre(fichierPotentiellementInexistant);
+		}
 		int minute, heure, coef;
 		float hauteur;
 		String[] heureTab;
@@ -128,10 +145,16 @@ public class LectureFichierTxt {
 		catch (IOException parException) { 
 			System.out.println("Fichier introuvable");
 		}
+		File nouveauFichier = new File(fichier.getPath()+".java");
+		ecriture(nouveauFichier,collectionMaree);
 		return collectionMaree;
 	}
 	
-	
+	/**
+	 * Renvoie true si la String en paramètre est transformable en type numérique, et false inversement
+	 * @param str
+	 * @return
+	 */
 	public static boolean isNumeric(String str) { 
 		  try {  
 		    Double.parseDouble(str);  
@@ -140,8 +163,18 @@ public class LectureFichierTxt {
 		    return false;  
 		  }  
 		}
-	
+	/**
+	 * Vérifie si le fichier n'a pas déjà été lu, si c'est le cas on reprend la collection enregistrée, sinon on parcoure le
+	 * fichier .txt et enregistre toutes les hauteursUnJour dans une CollectionHauteur, puis on écris le fichier java sur le système en
+	 * utilisant le même nom avec un .java à la fin.
+	 * @param fichier
+	 * @return
+	 */
 	public static CollectionHauteur lectureHauteur(File fichier) {
+		File fichierPotentiellementInexistant = new File(fichier.getPath() + ".java");
+		if(fichierPotentiellementInexistant.exists()) {
+			return (CollectionHauteur) lectureFichierEnregistre(fichierPotentiellementInexistant);
+		}
 		CollectionHauteur res = new CollectionHauteur();
 		int jourDavant = -1;
 		HauteursUnJour hauteursUnJour = null;
@@ -156,14 +189,14 @@ public class LectureFichierTxt {
 	    		String[] timeTab = items[0].split(" ");
 	    		String[] dateTab = timeTab[0].split("/");
 	    		String[] heureTab = timeTab[1].split(":");
-	    		GregorianCalendar date = new GregorianCalendar(Integer.parseInt(dateTab[0]),Integer.parseInt(dateTab[1]),Integer.parseInt(dateTab[2]));
+	    		GregorianCalendar date = new GregorianCalendar(Integer.parseInt(dateTab[2]),Integer.parseInt(dateTab[1]),Integer.parseInt(dateTab[0]));
 	    		int heure = Integer.parseInt(heureTab[0]);
 	    		int minute = Integer.parseInt(heureTab[1]);
 	    		float hauteurVal = Float.parseFloat(items[1]);
 	    		Hauteur hauteur = new Hauteur(date,heure,minute,hauteurVal);
 		    	if(i == 0) {
 		    		hauteursUnJour = new HauteursUnJour(date);
-		    		jourDavant = date.get(Calendar.DAY_OF_MONTH);
+		    		hauteursUnJour.addHauteur(hauteur);
 		    	}
 		    	else {
 		    		if(date.get(Calendar.DAY_OF_MONTH) != jourDavant) {
@@ -178,13 +211,21 @@ public class LectureFichierTxt {
 		    	i++;
 		    	jourDavant = date.get(Calendar.DAY_OF_MONTH);
 		    }
-		    return res;
+		    System.out.println();
 		}
 		catch (IOException parException) { 
 				System.out.println("Fichier introuvable");
 		}
+		File nouveauFichier = new File(fichier.getPath()+".java");
+		ecriture(nouveauFichier,res);
 		return res;
 	}
+	
+	/**
+	 * Fonction permettant d'écrire un objet java sur un fichier dans le système
+	 * @param parFichier
+	 * @param parObjet
+	 */
 	public static void ecriture (File parFichier, Object parObjet)  {
 		ObjectOutputStream flux = null;
 		// Ouverture du fichier en mode écriture
@@ -199,5 +240,27 @@ public class LectureFichierTxt {
 			System.exit (1);
 			}
 		}
+	
+	/**
+	 * Fonction permettant de lire un objet java dans un fichier système.
+	 * @param parFichier
+	 * @return
+	 */
+	public static Object lectureFichierEnregistre (File parFichier) {
+		ObjectInputStream flux ;
+		Object objetLu = null;
+		// Ouverture du fichier en mode lecture
+		try {
+			flux = new ObjectInputStream(new FileInputStream (parFichier));
+			objetLu = (Object)flux.readObject ();
+			flux.close ();
+			}
+		catch (ClassNotFoundException parException) {
+			System.err.println (parException.toString ());
+			System.exit (1);
+			}
+		catch (IOException parException)  {
+			System.err.println ("Erreur lecture du fichier " + parException.toString ());
+			System.exit (1);}return objetLu ;}
 	
 }
