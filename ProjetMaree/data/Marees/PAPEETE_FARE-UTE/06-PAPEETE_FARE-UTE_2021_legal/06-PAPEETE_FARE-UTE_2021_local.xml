@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../source/xsd/maree.xsd">
+	<city>
+		<port meanLevel="0.51" type="principal">
+			<name>Papeete [Polynésie française]</name>
+			<position>
+				<systemeGeodesique>wgs84</systemeGeodesique>
+				<latitude>-17.533333</latitude>
+				<longitude>-149.566666</longitude>
+			</position>
+			<values content="prediction">
+			<!-- 152 -->
+			<value moon="dq" coef="000" state="high">
+				<dateTime>2021-06-01T01:53:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-01T10:02:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-01T18:20:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<!-- 153 -->
+			<value state="low">
+				<dateTime>2021-06-02T05:00:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-02T09:14:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-02T13:45:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-02T20:21:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<!-- 154 -->
+			<value state="low">
+				<dateTime>2021-06-03T04:50:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-03T09:48:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-03T15:05:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-03T21:42:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 155 -->
+			<value state="low">
+				<dateTime>2021-06-04T04:57:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-04T10:17:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-04T15:53:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-04T22:28:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 156 -->
+			<value state="low">
+				<dateTime>2021-06-05T05:08:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-05T10:44:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-05T16:29:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-05T23:02:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 157 -->
+			<value state="low">
+				<dateTime>2021-06-06T05:21:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-06T11:08:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-06T17:01:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-06T23:30:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 158 -->
+			<value state="low">
+				<dateTime>2021-06-07T05:35:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-07T11:31:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-07T17:30:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-07T23:56:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 159 -->
+			<value state="low">
+				<dateTime>2021-06-08T05:49:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-08T11:52:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-08T17:57:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 160 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-09T00:19:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-09T06:04:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-09T12:11:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-09T18:23:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 161 -->
+			<value moon="nl" coef="000" state="high">
+				<dateTime>2021-06-10T00:41:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-10T06:20:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-10T12:28:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-10T18:48:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 162 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-11T01:00:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-11T06:38:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-11T12:46:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-11T19:13:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 163 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-12T01:18:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-12T06:58:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-12T13:05:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-12T19:38:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 164 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-13T01:33:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-13T07:20:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-13T13:30:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-13T20:07:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 165 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-14T01:47:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-14T07:45:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-14T14:04:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-14T20:38:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<!-- 166 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-15T02:00:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-15T08:15:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-15T14:50:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-15T21:17:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<!-- 167 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-16T02:07:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-16T08:56:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-16T16:16:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-16T22:17:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<!-- 168 -->
+			<value moon="pq" coef="000" state="high">
+				<dateTime>2021-06-17T01:45:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-17T10:45:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-17T18:56:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<!-- 169 -->
+			<value state="low">
+				<dateTime>2021-06-18T04:54:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-18T08:48:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-18T13:06:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-18T21:05:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<!-- 170 -->
+			<value state="low">
+				<dateTime>2021-06-19T04:38:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-19T09:28:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-19T14:30:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-19T22:07:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 171 -->
+			<value state="low">
+				<dateTime>2021-06-20T04:47:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-20T10:00:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-20T15:27:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-20T22:48:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 172 -->
+			<value state="low">
+				<dateTime>2021-06-21T05:04:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-21T10:31:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-21T16:14:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-21T23:23:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 173 -->
+			<value state="low">
+				<dateTime>2021-06-22T05:25:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-22T11:02:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-22T16:58:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-22T23:55:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<!-- 174 -->
+			<value state="low">
+				<dateTime>2021-06-23T05:47:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-23T11:36:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-23T17:41:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 175 -->
+			<value moon="pl" coef="000" state="high">
+				<dateTime>2021-06-24T00:25:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-24T06:12:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-24T12:13:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-24T18:25:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 176 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-25T00:53:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-25T06:41:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-25T12:53:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-25T19:09:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 177 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-26T01:20:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-26T07:12:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-26T13:36:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-26T19:51:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 178 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-27T01:45:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-27T07:46:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-27T14:22:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-27T20:31:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<!-- 179 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-28T02:09:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-28T08:23:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-28T15:12:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-28T21:11:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<!-- 180 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-29T02:28:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-29T09:03:00-10:00</dateTime>
+				<height>0.40</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-29T16:07:00-10:00</dateTime>
+				<height>0.60</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-29T21:51:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<!-- 181 -->
+			<value coef="000" state="high">
+				<dateTime>2021-06-30T02:41:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-30T09:51:00-10:00</dateTime>
+				<height>0.45</height>
+			</value>
+			<value coef="000" state="high">
+				<dateTime>2021-06-30T17:10:00-10:00</dateTime>
+				<height>0.55</height>
+			</value>
+			<value state="low">
+				<dateTime>2021-06-30T22:35:00-10:00</dateTime>
+				<height>0.50</height>
+			</value>
+			</values>
+		</port>
+		<pays>
+			<name>Polynésie_française</name>
+		</pays>
+	</city>
+</tide>
